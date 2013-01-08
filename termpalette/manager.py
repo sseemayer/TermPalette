@@ -1,13 +1,14 @@
 
 import termpalette.viewers
-
+import termpalette.util as u
 
 def list_viewers():
 	print("\nAvailable viewers:\n")
-	print("name         description")
-	print("----         -----------")
+	print(u.color_command(u.underline()) + "name" + u.color_command() + " " * 9 + u.color_command(u.underline()) + "description" + u.color_command())
 	for key, viewer in [ (k, termpalette.viewers.registered_viewers[k]) for k in sorted(termpalette.viewers.registered_viewers.keys()) ]:
-		print("{k:<12} {d}".format(k=key, d=viewer['desc']))
+		print(u.color_command(u.bold(), u.fg(u.colors.BLUE)) + "{:<12}".format(key) + u.color_command() + " {}".format(viewer['desc']))
+
+	print()
 
 def main():
 
