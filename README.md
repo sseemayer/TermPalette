@@ -4,6 +4,11 @@ TermPalette is a collection of terminal color palette viewers written in python.
 
 TermPalette is available under the MIT license.
 
+![TermPalette screenshot](http://i.imgur.com/jenjU.png)
+
+See [all screenshots at the Imgur album](http://imgur.com/a/M9giD).
+
+
 ## Installation
 
 ### ArchLinux
