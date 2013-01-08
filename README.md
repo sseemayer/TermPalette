@@ -7,7 +7,7 @@ TermPalette is available under the MIT license.
 ## Installation
 
 ### ArchLinux
-If you're an ArchLinux user, you can use the [termpalette-git] PKGBUILD(https://aur.archlinux.org/packages/termpalette-git/).
+If you're an ArchLinux user, you can use the [termpalette-git PKGBUILD](https://aur.archlinux.org/packages/termpalette-git/).
 
 ### Other *NIX
 Clone the repo or download the source, then use the regular python distutils way:
