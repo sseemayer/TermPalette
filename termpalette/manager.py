@@ -29,18 +29,13 @@ def main():
 	if len(args) == 0:
 		selected_viewer = random.choice(list(termpalette.viewers.registered_viewers.keys()))
 
-	elif len(args) == 1:
+	else:
 		selected_viewer = args[0]
 
-		if not selected_viewer in termpalette.viewers.registered_viewers:
-			sys.stderr.write("Unknown viewer: {}\n".format(selected_viewer))
-			parser.print_usage();
-			sys.exit(1);
+
+	if not selected_viewer in termpalette.viewers.registered_viewers:
+		sys.stderr.write("Unknown viewer: {}\n".format(selected_viewer))
+		parser.print_usage();
+		sys.exit(1);
 		
-	else:
-		sys.stderr.write("Only one positional argument (viewer name) supported!\n")
-		parser.print_usage()
-		sys.exit(2);
-
-
-	termpalette.viewers.registered_viewers[selected_viewer]['func']()
+	termpalette.viewers.registered_viewers[selected_viewer]['func'](args[1:])

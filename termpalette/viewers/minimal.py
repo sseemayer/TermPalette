@@ -2,8 +2,10 @@ from termpalette.viewers import viewer
 from termpalette.util import *
 import sys
 
-@viewer('minimal', 'A minimal matrix of colors')
-def minimal(cell=" ☻ ", labels=colornames_short):
+@viewer('minimat', 'A minimal matrix of colors')
+def minimat(args, labels=colornames_short):
+
+	cell = " ☻ " if len(args) == 0 else args[0]
 
 	labellen = max( len(cn) for cn in labels )
 	cellsize = max( labellen, len(cell) )
