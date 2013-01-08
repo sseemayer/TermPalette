@@ -3,7 +3,7 @@ from termpalette.util import *
 import sys
 
 @viewer('brightness', 'A color palette comparing color brightnesses')
-def brightness():
+def brightness(args):
 
 	sys.stdout.write("\n")
 	sys.stdout.write( " " * 7 + " ".join( " {} ".format(color) for color in colornames_short) + "\n" )
