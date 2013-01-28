@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from termpalette.viewers import viewer
 from termpalette.util import *
 import sys
