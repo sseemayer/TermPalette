@@ -4,6 +4,21 @@ TermPalette is a collection of terminal color palette viewers written in python.
 
 TermPalette is available under the MIT license.
 
+![TermPalette screenshot](http://i.imgur.com/jenjU.png)
+
+See [all screenshots at the Imgur album](http://imgur.com/a/M9giD).
+
+
+## Installation
+
+### ArchLinux
+If you're an ArchLinux user, you can use the [termpalette-git PKGBUILD](https://aur.archlinux.org/packages/termpalette-git/).
+
+### Other *NIX
+Clone the repo or download the source, then use the regular python distutils way:
+
+	$ sudo python setup.py install
+
 ## Usage
 
 	$ tpal --list
@@ -12,10 +27,13 @@ TermPalette is available under the MIT license.
 
 	name         description
 	----         -----------
-	matrix       A large matrix of colors
-	minimal      A minimal matrix of colors
+	art          A colorful art gallery (try doing "art list")
+	brightness   A color palette comparing color brightnesses
+	matrix       A large matrix showing all color and background combinations for regular and bold text
+	minimat      A minimal matrix of colors
+	rainbow      A rainbow of colors
 
-	$ tpal minimal
+	$ tpal minimat
 
 	( a beautiful color preview )
 
